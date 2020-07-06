@@ -11,7 +11,7 @@ description: A im Flutter application.
 # In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
 # Read more about iOS versioning at
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-version: 1.0.0+1
+version: 1.0.0
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
@@ -19,10 +19,46 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  # 国际化
+  flutter_localizations:
+    sdk: flutter
 
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^0.1.2
+  # 容云 plugin
+  rongcloud_im_plugin: ^1.1.1
+
+  # 图片缓存插件[容云有用到]
+  cached_network_image: ^2.0.0-rc
+
+  # 获取文件系统插件[容云有用到]
+  path_provider: ^1.6.1
+
+  # 消息插件[容云有用到]
+  flutter_local_notifications: ^0.9.1
+
+  # web view
+  webview_flutter: ^0.3.19
+
+  # shared preference
+  shared_preferences: ^0.5.6
+
+  # toast
+  fluttertoast: ^3.1.3
+
+  # 获取版本信息
+  package_info: ^0.4.0
+
+  # 状态管理[跨page声明范围为整个app，单个page声明在该page下，对于跨page，但是极少使用，或者使用一次的使用event bus]
+  provider: ^4.0.0
+
+  # 网络框架
+  dio: ^3.0.7
+  dio_cookie_manager: ^1.0.0
+
+  # 下拉刷新列表
+  pull_to_refresh: ^1.5.7
+
+  # url插件[如拨打电话]
+  url_launcher: ^5.4.1
 
 dev_dependencies:
   flutter_test:
